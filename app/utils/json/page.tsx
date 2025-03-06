@@ -4,7 +4,7 @@ import { Card, CardBody } from "@heroui/card";
 import { useEffect, useState } from "react";
 import json5 from "json5";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { synthwave84 } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { funky } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import { title } from "@/components/primitives";
 
@@ -50,9 +50,9 @@ export default function JsonFormatterPage() {
           <Card isHoverable className="flex-[3]" shadow="none">
             <CardBody>
               <SyntaxHighlighter
-                className="!text-lg !my-0 rounded-lg"
+                className="!text-lg !my-0 !p-0 rounded-lg"
                 language="javascript"
-                style={synthwave84}
+                style={funky}
               >
                 {output}
               </SyntaxHighlighter>
